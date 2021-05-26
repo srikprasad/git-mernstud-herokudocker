@@ -1,0 +1,26 @@
+{
+    "name": "mern-to-heroku",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "RIT",
+   "dependencies": {
+  "body-parser": "^1.18.3",
+  "cors": "^2.8.5",
+  "dotenv": "^6.1.0",
+  "express": "^4.16.4",
+  "morgan": "^1.8.2",
+  "mongoose": "^5.3.6"
+ },
+ "devDependencies": {
+  "concurrently": "^4.0.1",
+  "nodemon": "^1.18.4"
+ },
+    "scripts": {
+        "start": "node mern_server2.js"
+    },
+    "engines": {
+        "node": "8.9.2"
+    }
+}
+
+

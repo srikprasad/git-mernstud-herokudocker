@@ -1,0 +1,73 @@
+git init
+git add .
+git remote add origin https://github.com/srikprasad/git-mernstud-herokudocker
+git commit -m "new Commit-1"
+git status 
+git log --oneline
+git push -u origin master
+username: srikprsad@msrit.edu
+password:Srisecret@1234
+
+
+
+
+
+
+
+heroku login
+
+heroku create mydocker-demo
+heroku create mymernemp
+
+heroku stack:set container -a mydocker-demo
+heroku stack:set container -a mydocker-empmern
+
+
+// Step 1 - Initialise the git for your project
+
+git init
+//Step 2 - Add all the changes
+
+git add .
+//Step 3- Perform a commit
+
+git commit -m "mymernapp1"
+//Step 4 - Create your Heroku app
+
+heroku login
+
+heroku create myempmern
+//Step 5 - finally push to Heroku
+
+heroku config:set MONGODB_URI="mongodb+srv://myemp:SepNn3zRqRB1sThI@cluster0.sq4i9.mongodb.net/mydb?retryWrites=true&w=majority"
+
+
+git push heroku master
+
+heroku open mymernemp
+heroku local
+heroku apps:destroy myempmern
+
+heroku open -a myempmern
+cd client
+npm run build
+
+heroku run -a myempmern /bin/bash
+ npm start
+
+https://gist.github.com/ross-u/b59ea6a1febefb80bffc15ecf31ea827
+
+
+
+
+
+build:
+  docker:
+    web: Dockerfile
+release:
+  image: web
+run:
+  web: npm run start
+
+heroku git:clone -a mernemp
+heroku git:clone -a mernstud
